@@ -2,10 +2,12 @@ body {
 	max-width: 1920px;
 	margin: auto;
 }
+
 * {
 	font-family: 'Inter';
 	font-style: normal;
 }
+
 .top-header {
 	background-color: white;
 	position: sticky;
@@ -42,6 +44,11 @@ body {
 	width: 20px;
 }
 
+.carousel-item {
+	width: 100%;
+	height: auto;
+}
+
 #about {
 	display: flex;
 	background-color: #F6D2B8;
@@ -61,6 +68,11 @@ body {
 	z-index: -1;
 }
 
+.picture.left {
+	width: 100%;
+	height: auto;
+}
+
 .picture {
 	flex: 1;
 	margin: 0 20px;
@@ -69,56 +81,70 @@ body {
 
 .picture img {
 	width: 100%;
-
 }
+
 #about-me {
 	flex: 2
 }
+
 .about-me__title {
 	margin-top: 1em;
 	margin-bottom: 60px;
 	font-size: 30px;
 }
+
 .about-me__introduction {
 	font-family: 'Spectral';
 	font-weight: 800;
 	font-style: italic;
 	width: 60%;
 }
+
 #about-me p {
 	width: 80%;
 	font-size: 14px;
 }
 
 #gallery {
-	/*	min-height: 100vh; */
+	min-height: 100vh;
 }
+
 .title{
 	text-align: center;
 	padding-block: 2em;
 }
+
 .gallery .nav {
 	justify-content: center;
 }
+
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
 	color: #fff;
 	background-color: #BEB45A;
 	border-radius:0 ;
 }
+
 .nav-pills .nav-link {
 	color: #000
 }
+
 .item-column {
 	position: relative;
 	margin-bottom: 0 !important;
 	padding: 0;
 }
+
 .item-column::after{
 	content: "";
 	display: block;
 	padding-bottom: 100%;
-
 }
+
+.gallery {
+	width: 100%;
+	height: auto;
+}
+
 .gallery-item {
 	position: absolute;
 	width: 100%;
@@ -126,6 +152,7 @@ body {
 	object-fit: cover;
 	padding: .5em;
 }
+
 .mg-prev, .mg-next {
 	width: 30px;
 	height: 30px;
@@ -143,12 +170,13 @@ body {
 	margin: auto;
 	padding-block: 3em;
 }
+
 .quote__text {
 	font-family: Spectral;
 	font-style: italic;
 	font-weight: 300;
-
 }
+
 .quote__author {
 	font-family: Spectral;
 	font-weight: 800;
@@ -160,6 +188,7 @@ body {
 	background-color: #A8D5D8 ;
 	position: relative;
 }
+
 #services .container::before{
 	content: ' ';
 	background-color: #1C6474;
@@ -175,7 +204,6 @@ body {
 	justify-content: space-between;
 	display: flex;
 	padding : 2em 0;
-
 }
 
 .service {
@@ -201,6 +229,7 @@ body {
 #contact .container {
 	display: flex;
 }
+
 .picture.right::before {
 	content: ' ';
 	background-color: #BEB45A;
@@ -211,10 +240,16 @@ body {
 	right: 0;
 	z-index: -1;
 }
+
+.picture.right {
+	width: 100%;
+	height: auto;
+}
+
 .form-container {
 	flex : 2;
-
 }
+
 form {
 	display: flex;
 	flex-direction: column;
@@ -239,6 +274,7 @@ form textarea {
 	font-size: 1.2em;
 	margin-bottom: 20px;
 }
+
 input[type="submit"] {
 	background-color: #BEB45A;
 	padding: .5em 1em
@@ -353,4 +389,3 @@ input[type="submit"] {
 		width: 80%;
 	}
 }
-
