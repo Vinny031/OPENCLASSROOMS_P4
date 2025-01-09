@@ -40,6 +40,11 @@ body {
 	color: #000
 }
 
+.nav img {
+	width: 20px;
+	height: 20px;
+}
+
 .social-link img {
 	width: 20px;
 }
