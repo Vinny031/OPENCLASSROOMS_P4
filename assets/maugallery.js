@@ -132,14 +132,14 @@
           if (width > height) {
               $(this).addClass("landscape");
               modalDialog.css({
-                width: "70vw",
+                width: "60vw",
                 height: "auto",
               });
           } else {
               $(this).addClass("portrait");
               modalDialog.css({
                   Width: "auto",
-                  Height: "70vh",
+                  Height: "60vh",
               });
           }
       });
