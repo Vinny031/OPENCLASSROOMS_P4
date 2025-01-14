@@ -38,6 +38,7 @@
       }
 
       $(this).fadeIn(500);
+      $(".nav-pills .nav-link[data-images-toggle='all']").addClass("active-tag");
     });
   };
   $.fn.mauGallery.defaults = {
@@ -200,7 +201,7 @@
 
     showItemTags(gallery, position, tags) {
       var tagItems =
-        '<li class="nav-item"><span class="nav-link active active-tag"  data-images-toggle="all">Tous</span></li>';
+      '<li class="nav-item"><span class="nav-link active-tag"  data-images-toggle="all">Tous</span></li>';
       $.each(tags, function(index, value) {
         tagItems += `<li class="nav-item active">
                 <span class="nav-link"  data-images-toggle="${value}">${value}</span></li>`;
@@ -220,23 +221,19 @@
       if ($(this).hasClass("active-tag")) {
         return;
       }
-      $(".active-tag").removeClass("active active-tag");
+
+      $(".nav-pills .nav-link").removeClass("active-tag");
       $(this).addClass("active-tag");
 
       var tag = $(this).data("images-toggle");
 
-      $(".gallery-item").each(function() {
-        $(this)
-          .parents(".item-column")
-          .hide();
+      $(".gallery-item").each(function () {
+        $(this).parents(".item-column").hide();
+
         if (tag === "all") {
-          $(this)
-            .parents(".item-column")
-            .show(300);
+          $(this).parents(".item-column").show(300);
         } else if ($(this).data("gallery-tag") === tag) {
-          $(this)
-            .parents(".item-column")
-            .show(300);
+          $(this).parents(".item-column").show(300);
         }
       });
     }
