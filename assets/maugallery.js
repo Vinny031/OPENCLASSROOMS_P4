@@ -65,7 +65,16 @@
     $(".gallery").on("click", ".mg-next", () =>
       $.fn.mauGallery.methods.nextImage(options.lightboxId)
     );
+  
+    $(document).on("keydown", function(e) {
+      if (e.key === "ArrowLeft") {
+        $.fn.mauGallery.methods.prevImage(options.lightboxId);
+      } else if (e.key === "ArrowRight") {
+        $.fn.mauGallery.methods.nextImage(options.lightboxId);
+      }
+    });
   };
+
   $.fn.mauGallery.methods = {
     createRowWrapper(element) {
       if (
