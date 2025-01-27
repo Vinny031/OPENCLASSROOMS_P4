@@ -95,7 +95,7 @@ body {
 .about-me__title {
 	margin-top: 1em;
 	margin-bottom: 60px;
-	font-size: 30px;
+	font-size: 28px;
 }
 
 .about-me__introduction {
@@ -103,6 +103,7 @@ body {
 	font-weight: 800;
 	font-style: italic;
 	width: 60%;
+	font-size: 16px;
 }
 
 #about-me p {
@@ -117,6 +118,7 @@ body {
 .title{
 	text-align: center;
 	padding-block: 2em;
+	font-size: 28px;
 }
 
 .gallery .nav {
@@ -129,12 +131,13 @@ body {
 
 .nav-pills .nav-link.active-tag {
     color: #fff !important;
-    background-color: #BEB45A !important;
+    background-color: #417346 !important;
 }
 
 .nav-pills .nav-link:hover {
-    background-color: #e4e4c0;
+    background-color: #E4E4C0;
     color: #000;
+	cursor: pointer;
 }
 
 .item-column {
@@ -236,6 +239,9 @@ body {
 	font-family: Spectral;
 	font-style: italic;
 	font-weight: 300;
+	font-size: 40px;
+	margin: 0 0 8px;
+	line-height: 1.2;
 }
 
 .quote__author {
@@ -339,6 +345,11 @@ form textarea {
 input[type="submit"] {
 	background-color: #BEB45A;
 	padding: .5em 1em
+}
+
+.contact__title {
+	margin: 0 0 8px;
+	font-size: 28px;
 }
 
 @media all and (max-width: 1180px) {
